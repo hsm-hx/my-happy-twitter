@@ -1,0 +1,10 @@
+{
+  "name": "My happy Twitter",
+  "version": "1.0",
+  "description": "HAPPYを追い求めて生きていきましょう",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
