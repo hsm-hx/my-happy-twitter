@@ -2,9 +2,18 @@
   "name": "My happy Twitter",
   "version": "1.0",
   "description": "HAPPYを追い求めて生きていきましょう",
+  "content_scripts": [
+    {
+      "matches": ["https://tweetdeck.twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
+  "permissions": [
+    "activeTab"
+  ],
   "manifest_version": 2
 }
