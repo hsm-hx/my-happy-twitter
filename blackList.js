@@ -1,4 +1,5 @@
-var blackWord = [
+var blackWords = [
+  "地雷",
   "アベ",
   "反対します",
   "人工地震",

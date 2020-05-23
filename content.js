@@ -5,9 +5,11 @@ function getRandomInt(max) {
 setInterval(() => {
   tweets = Array.from(document.getElementsByClassName('tweet-text'));
   tweets.forEach((tweet) => {
-    if (tweet.innerHTML.includes('地雷')) {
-      index = getRandomInt(happyTweets.length)
-      tweet.innerHTML = happyTweets[index];
-    }
+    blackWords.forEach((word) => {
+      if (tweet.innerHTML.includes(word)) {
+        index = getRandomInt(happyTweets.length);
+        tweet.innerHTML = happyTweets[index];
+      }
+    })
   })
 }, 5000)
